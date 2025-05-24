@@ -5,6 +5,8 @@ $home = "Home";
 
 $_GET['Home'] = $home;
 
+include_once "assets/php/classes.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,18 +48,17 @@ $_GET['Home'] = $home;
     </section>
     <div class="div__intersection"></div>
     <div class="div__products">
-        <div class="products__card">
-            <img class="products-card__img" src="assets/img/donker_blauwe_usb.jpg" alt="placeholder">
-            <h1 class="products-card__product-name">usb-stick 128mb</h1>
-            <h2 class="products-card__product-price">€1.00</h2>
-            <button class="products-card__button">Add to card</button>
-        </div>
-        <div class="products__card">
-            <img class="products-card__img" src="assets/img/donker_blauwe_usb.jpg" alt="placeholder">
-            <h1 class="products-card__product-name">usb-stick 128mb</h1>
-            <h2 class="products-card__product-price">€1.00</h2>
-            <button class="products-card__button">Add to card</button>
-        </div>
+        <?php
+
+        foreach ($dataObject as $items) {
+            print("<div class=\"products__card\">");
+            print("    <img class=\"products-card__img\" src=\"$items->image\" alt=\"placeholder\">");
+            print("    <h1 class=\"products-card__product-name\">$items->product_name</h1>");
+            print("    <h2 class=\"products-card__product-price\">$items->product_price</h2>");
+            print("    <button class=\"products-card__button\">Add to card</button>");
+            print("</div>");
+        }
+        ?>
     </div>
     <!-- <div>
         <img class="img__product2" src="" alt="placeholder">

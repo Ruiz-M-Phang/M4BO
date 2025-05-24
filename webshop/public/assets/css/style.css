@@ -148,6 +148,8 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-evenly;
+    column-gap: 1rem;
+    row-gap: 1rem;
 }
 
 .products__card {
@@ -187,7 +189,7 @@ body {
 .footer {
     margin-top: 1rem;
     position: absolute;
-    background-color: black;
+    background-color: var(--tweede_huisstyle_kleur);
     color: white;
     text-align: center;
     width: 100vw;
