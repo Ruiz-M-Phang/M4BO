@@ -36,12 +36,12 @@
 body {
     background-color: var(--BG);
     font-family: sans-serif;
-    margin-top: 20vh;
+    margin-top: 21vh;
 }
 
 .message__under-construction {
     position: fixed;
-    margin-top: -20vh;
+    margin-top: -21vh;
     background-color: black;
     color: white;
     text-align: center;
@@ -53,7 +53,7 @@ body {
     background-color: var(--tweede_huisstyle_kleur);
     position: fixed;
     /* margin-top: -20vh; */
-    margin-top: -15vh;
+    margin-top: -16vh;
     width: 100vw;
     margin-left: -1vw;
     color: white;
@@ -180,10 +180,16 @@ body {
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-.img__product2 {
+/* .img__product2 {
     width: 12rem;
-}
+} */
 
-h1 {
-    font-size: 5rem;
+.footer {
+    margin-top: 1rem;
+    position: absolute;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100vw;
+    margin-left: -1vw;
 }

@@ -66,8 +66,8 @@ $_GET['Home'] = $home;
         <img class="img__product3" src="" alt="placeholder">
     </div>
     <button >klik me</button> -->
-    <footer>
-        
+    <footer class="footer">
+        <h3 class="footer__texts">@Ruiz M. Phang</h3>
     </footer>
 </body>
 </html>
