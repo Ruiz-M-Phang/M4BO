@@ -11,11 +11,31 @@ $dark_blue_usb->image ="assets/img/donker_blauwe_usb.jpg";
 $dark_blue_usb->product_name = "usb-stick 128mb";
 $dark_blue_usb->product_price ="€1.00";
 
-$groene_usb = new products();
-$groene_usb->image ="assets/img/groene_usb.jpg";
-$groene_usb->product_name = "usb-stick 128mb";
-$groene_usb->product_price ="€1.00";
+$green_usb = new products();
+$green_usb->image ="assets/img/groene_usb.jpg";
+$green_usb->product_name = "usb-stick 128mb";
+$green_usb->product_price ="€1.00";
 
-$dataObject = [$dark_blue_usb, $groene_usb];
+$licht_blue_usb = new products();
+$licht_blue_usb->image ="assets/img/licht_blauw_usb.jpg";
+$licht_blue_usb->product_name = "usb-stick 128mb";
+$licht_blue_usb->product_price ="€1.00";
+
+$orange_usb = new products();
+$orange_usb->image ="assets/img/orange_usb.jpg";
+$orange_usb->product_name = "usb-stick 128mb";
+$orange_usb->product_price ="€1.00";
+
+$pink_usb = new products();
+$pink_usb->image ="assets/img/roze_usb.jpg";
+$pink_usb->product_name = "usb-stick 128mb";
+$pink_usb->product_price ="€1.00";
+
+$black_usb = new products();
+$black_usb->image ="assets/img/zwarte_usb.jpg";
+$black_usb->product_name = "usb-stick 128mb";
+$black_usb->product_price ="€1.00";
+
+$dataObject = [$dark_blue_usb, $green_usb, $licht_blue_usb, $orange_usb, $pink_usb, $black_usb];
 
 ?>

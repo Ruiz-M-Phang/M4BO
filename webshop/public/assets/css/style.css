@@ -73,6 +73,7 @@ body {
     justify-content: space-between;
     list-style: none;
     position: relative;
+    margin-bottom: 1rem;
 
 }
 
@@ -96,6 +97,19 @@ body {
     height: 5rem;
 }
 
+.list__second-item {
+    background-color: white;
+    text-decoration: none;
+    display: flex;
+    /* justify-content: space-between; */
+    list-style: none;
+    width: 100vw;
+    margin-left: -5vw;
+    position: fixed;
+    border-bottom: 0.1rem solid;
+    border-color: black;
+}
+
 .CTA {
     border: 0.1rem solid;
     border-color: black;
@@ -103,6 +117,10 @@ body {
     justify-content: space-around;
     background-color: white;
     margin: auto 5rem auto 5rem;
+}
+
+.CTA__div {
+    margin: 0.5rem 0.5rem auto;
 }
 
 .CTA__product-name {

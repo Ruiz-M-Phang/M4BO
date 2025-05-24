@@ -32,6 +32,11 @@ include_once "assets/php/classes.php";
                     <div class="shoppingcard__div--counter" id="data-counter">0</div>
                 </a>
             </li>
+            <li class="list__second-item">
+                <a class="navItem__second-link--contact" href="">
+                    <button class="navItem__button--contact">contact</button>
+                </a>
+            </li>
         </ul>
     </nav>
     <section class="CTA">
@@ -60,13 +65,6 @@ include_once "assets/php/classes.php";
         }
         ?>
     </div>
-    <!-- <div>
-        <img class="img__product2" src="" alt="placeholder">
-    </div>
-    <div>
-        <img class="img__product3" src="" alt="placeholder">
-    </div>
-    <button >klik me</button> -->
     <footer class="footer">
         <h3 class="footer__texts">@Ruiz M. Phang</h3>
     </footer>
