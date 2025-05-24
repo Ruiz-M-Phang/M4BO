@@ -17,8 +17,9 @@ $_GET['Home'] = $home;
     <title>TinyUSBsitcks.co</title>
 </head>
 <body onload="setTimeout(myFunction, 10000);">
-    <header>
+    <header class="message__under-construction">
         <!-- The header class and contents in the header are tempary -->
+         <h3 class="under-construction__texts">This page is under construction</h3>
     </header>
     <nav class="topNav">
         <ul class="topNav__list">
@@ -58,13 +59,15 @@ $_GET['Home'] = $home;
             <button class="products-card__button">Add to card</button>
         </div>
     </div>
-    <div>
+    <!-- <div>
         <img class="img__product2" src="" alt="placeholder">
     </div>
     <div>
         <img class="img__product3" src="" alt="placeholder">
     </div>
-    <button >klik me</button>
-    <footer></footer>
+    <button >klik me</button> -->
+    <footer>
+        
+    </footer>
 </body>
 </html>

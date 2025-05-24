@@ -39,10 +39,21 @@ body {
     margin-top: 20vh;
 }
 
+.message__under-construction {
+    position: fixed;
+    margin-top: -20vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100vw;
+    margin-left: -1vw;
+}
+
 .topNav {
     background-color: var(--tweede_huisstyle_kleur);
     position: fixed;
-    margin-top: -20vh;
+    /* margin-top: -20vh; */
+    margin-top: -15vh;
     width: 100vw;
     margin-left: -1vw;
     color: white;
