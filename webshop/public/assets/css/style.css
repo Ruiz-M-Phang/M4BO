@@ -36,24 +36,29 @@
 body {
     background-color: var(--BG);
     font-family: sans-serif;
-    margin-top: 21vh;
+    margin-top: 23vh;
 }
 
-.message__under-construction {
+/* .message__under-construction {
     position: fixed;
-    margin-top: -21vh;
+    margin-top: -23vh;
+    height: 5vh;
     background-color: black;
     color: white;
     text-align: center;
     width: 100vw;
     margin-left: -1vw;
-}
+} */
+
+/* .under-construction__texts {
+    margin-top: -0.01rem;
+} */
 
 .topNav {
     background-color: var(--tweede_huisstyle_kleur);
     position: fixed;
     /* margin-top: -20vh; */
-    margin-top: -16vh;
+    margin-top: -23vh;
     width: 100vw;
     margin-left: -1vw;
     color: white;
@@ -101,13 +106,18 @@ body {
     background-color: white;
     text-decoration: none;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     list-style: none;
-    width: 100vw;
-    margin-left: -5vw;
     position: fixed;
+    width: 110vw;
+    margin-left: -2rem;
     border-bottom: 0.1rem solid;
     border-color: black;
+}
+
+.navItem__button--contact {
+    background-color: white;
+    
 }
 
 .CTA {
@@ -162,9 +172,55 @@ body {
     margin-bottom: 1rem;
 }
 
+.div__search-dropdown {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropbtn {
+  background-color: var(--button_enabled);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--tweede_huisstyle_kleur);
+}
+
 .div__products {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     justify-content: space-evenly;
     column-gap: 1rem;
     row-gap: 1rem;

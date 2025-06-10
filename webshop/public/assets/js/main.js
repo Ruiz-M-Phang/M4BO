@@ -1,4 +1,4 @@
 
 function myFunction() {
-//   alert('sending nuke to 103.237.47.255');
+  alert('Buy now only 3 in stock');
 }

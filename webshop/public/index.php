@@ -16,13 +16,20 @@ include_once "assets/php/classes.php";
     <script src="assets/js/all.min.js" defer></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/main.js" defer></script>
+    <script type='text/javascript'>
+        <?php
+            $php_array = $dataObject;
+            $js_array = json_encode($php_array);
+            echo "var javascript_array = ". $js_array . ";\n";
+        ?>
+    </script>
     <title>TinyUSBsitcks.co</title>
 </head>
-<body onload="setTimeout(myFunction, 10000);">
-    <header class="message__under-construction">
+<body onload="setTimeout(myFunction, 1000);">
+    <!-- <header class="message__under-construction"> -->
         <!-- The header class and contents in the header are tempary -->
-         <h3 class="under-construction__texts">This page is under construction</h3>
-    </header>
+         <!-- <h3 class="under-construction__texts">This page is under construction</h3> -->
+    <!-- </header> -->
     <nav class="topNav">
         <ul class="topNav__list">
             <li class="list__item">
@@ -52,6 +59,20 @@ include_once "assets/php/classes.php";
         <img class="img__CTA" src="assets/img/usb_in_aanbieding.jpg" alt="2_usb-sticks_on_sale">
     </section>
     <div class="div__intersection"></div>
+    <div class="div__search-dropdown">
+        <input type="search" name="" id="">
+        <div class="dropdown">
+            <button class="dropbtn">Filter</button>
+            <div class="dropdown-content">
+                <a href="#">dark blue</a>
+                <a href="#">green</a>
+                <a href="#">light blue</a>
+                <a href="#">orange</a>
+                <a href="#">pink</a>
+                <a href="#">black</a>
+            </div>
+        </div>
+    </div>
     <div class="div__products">
         <?php
 
@@ -63,6 +84,7 @@ include_once "assets/php/classes.php";
             print("    <button class=\"products-card__button\">Add to card</button>");
             print("</div>");
         }
+        array_splice($dataObject, 1);
         ?>
     </div>
     <footer class="footer">
