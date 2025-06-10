@@ -36,7 +36,7 @@
 body {
     background-color: var(--BG);
     font-family: sans-serif;
-    margin-top: 23vh;
+    margin-top: 28vh;
 }
 
 /* .message__under-construction {
@@ -58,7 +58,7 @@ body {
     background-color: var(--tweede_huisstyle_kleur);
     position: fixed;
     /* margin-top: -20vh; */
-    margin-top: -23vh;
+    margin-top: -28vh;
     width: 100vw;
     margin-left: -1vw;
     color: white;
@@ -68,6 +68,10 @@ body {
 .navItem__link--Home{
     color: white;
     
+}
+
+.navItem__link--shopping_card {
+    color: white;
 }
 
 .list__item {
@@ -188,7 +192,6 @@ body {
 }
 
 .dropdown {
-  position: relative;
   display: inline-block;
 }
 

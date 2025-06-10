@@ -33,8 +33,10 @@ include_once "assets/php/classes.php";
     <nav class="topNav">
         <ul class="topNav__list">
             <li class="list__item">
-                <img class="navItem__logo" src="" alt="Logo">
-                <a class="navItem__link--Home" href="">
+                <a class="navItem__link--Home" href="index.php?Home=true">
+                    <img class="navItem__logo" src="" alt="Logo">
+                </a>
+                <a class="navItem__link--shopping_card" href="">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <div class="shoppingcard__div--counter" id="data-counter">0</div>
                 </a>
@@ -64,7 +66,7 @@ include_once "assets/php/classes.php";
         <div class="dropdown">
             <button class="dropbtn">Filter</button>
             <div class="dropdown-content">
-                <a href="#">dark blue</a>
+                <a href="index.php?dark_blue=true">dark blue</a>
                 <a href="#">green</a>
                 <a href="#">light blue</a>
                 <a href="#">orange</a>
@@ -76,15 +78,36 @@ include_once "assets/php/classes.php";
     <div class="div__products">
         <?php
 
-        foreach ($dataObject as $items) {
+        // function first_product() {
+
+        //     print("<div class=\"products__card\">");
+        //     print("    <img id=\"dark_blue_usb\" class=\"products-card__img\" src=\"$dark_blue_usb->image\" alt=\"placeholder\">");
+        //     print("    <h1 class=\"products-card__product-name\">$dark_blue_usb->product_name</h1>");
+        //     print("    <h2 class=\"products-card__product-price\">$dataObject->product_price</h2>");
+        //     print("    <button class=\"products-card__button\">Add to card</button>");
+        //     print("</div>"); 
+        // }
+
+        if (isset($_GET['dark_blue'])) {
             print("<div class=\"products__card\">");
-            print("    <img class=\"products-card__img\" src=\"$items->image\" alt=\"placeholder\">");
-            print("    <h1 class=\"products-card__product-name\">$items->product_name</h1>");
-            print("    <h2 class=\"products-card__product-price\">$items->product_price</h2>");
+            print("    <img id=\"dark_blue_usb\" class=\"products-card__img\" src=\"$dark_blue_usb->image\" alt=\"placeholder\">");
+            print("    <h1 class=\"products-card__product-name\">$dark_blue_usb->product_name</h1>");
+            print("    <h2 class=\"products-card__product-price\">$dark_blue_usb->product_price</h2>");
             print("    <button class=\"products-card__button\">Add to card</button>");
-            print("</div>");
+            print("</div>"); 
+        } else {
+
+            foreach ($dataObject as $items) {
+                asort($dataObject);
+
+                print("<div class=\"products__card\">");
+                print("    <img class=\"products-card__img\" src=\"$items->image\" alt=\"placeholder\">");
+                print("    <h1 class=\"products-card__product-name\">$items->product_name</h1>");
+                print("    <h2 class=\"products-card__product-price\">$items->product_price</h2>");
+                print("    <button class=\"products-card__button\">Add to card</button>");
+                print("</div>");
+            }
         }
-        array_splice($dataObject, 1);
         ?>
     </div>
     <footer class="footer">
