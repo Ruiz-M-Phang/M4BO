@@ -221,12 +221,20 @@ body {
   background-color: var(--tweede_huisstyle_kleur);
 }
 
+.div__seudo-products {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
 .div__products {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
     column-gap: 1rem;
     row-gap: 1rem;
+
+    
 }
 
 .products__card {
