@@ -103,25 +103,41 @@ body {
 
 .svg-inline--fa {
     margin: auto 2rem auto 1rem;
-    height: 5rem;
+    height: 2rem;
 }
 
-.list__second-item {
+.list__suedo_list {
     background-color: white;
     text-decoration: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: stretch;
     list-style: none;
     position: fixed;
-    width: 110vw;
-    margin-left: -2rem;
+    /* width: 110vw;
+    margin-left: -2rem; */
     border-bottom: 0.1rem solid;
     border-color: black;
+
+    .suedo_list__second-item {
+
+    }
+}
+
+.navItem__button--products {
+    background-color: white;
+    justify-self: flex-start;
+    width: 30vw;
 }
 
 .navItem__button--contact {
     background-color: white;
-    
+    width: 30vw;
+}
+
+.navItem__button--darkmode {
+    background-color: white;
+    justify-self: flex-end;
+    width: 30vw;
 }
 
 .CTA {

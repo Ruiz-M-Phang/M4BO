@@ -1,9 +1,9 @@
 <?php
 
-// "http://localhost:88/index.php?page=home"
-$home = "home";
+// "http://localhost:88/index.php?Home"
+$home = "Home";
 
-$_GET['page'] = $home;
+$_GET['Home'] = $home;
 
 include_once "assets/php/classes.php";
 

@@ -1,9 +1,9 @@
 <?php
 
-// "http://localhost:88/index.php?page=home"
-$home = "home";
+// "http://localhost:88/index.php?page=products"
+$overview = "products";
 
-$_GET['page'] = $home;
+$_GET['page'] = $overview;
 
 include_once "assets/php/classes.php";
 
@@ -67,6 +67,61 @@ include_once "assets/php/classes.php";
         <img class="img__CTA" src="assets/img/usb_in_aanbieding.jpg" alt="2_usb-sticks_on_sale">
     </section>
     <div class="div__intersection"></div>
+    <div class="div__search-dropdown">
+        <!-- <input type="search" name="" id="searchbar"> -->
+        <div class="dropdown">
+            <button class="dropbtn">Filter</button>
+            <div class="dropdown-content">
+                <a href="overview.php?filter=green">green</a>
+                <a href="overview.php?filter=blue">blue</a>
+                <a href="overview.php?filter=orange">orange</a>
+                <a href="overview.php?filter=pink">pink</a>
+                <a href="overview.php?filter=black">black</a>
+            </div>
+        </div>
+    </div>
+    <div class="div__seudo-products">
+        <?php
+
+// IF statement about the filter button
+            function filter_color($product){
+                $filter = $_GET["filter"];
+                if($product->color == $filter){
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            if ($_GET["filter"] == true) {
+            $newArray = array_filter($dataObject, "filter_color");
+
+            print("</div>");
+            print("<div class=\"div__products\">");
+            
+            foreach ($newArray as $items) {
+                asort($dataObject);
+
+                print("<div class=\"products__card\">");
+                print("    <img class=\"products-card__img\" src=\"$items->image\" alt=\"placeholder\">");
+                print("    <h1 class=\"products-card__product-name\">$items->product_name</h1>");
+                print("    <h2 class=\"products-card__product-price\">$items->product_price</h2>");
+                print("    <button class=\"products-card__button\">Add to card</button>");
+                print("</div>");
+            }} else {
+            foreach ($dataObject as $items) {
+                asort($dataObject);
+
+                print("<div class=\"products__card\">");
+                print("    <img class=\"products-card__img\" src=\"$items->image\" alt=\"placeholder\">");
+                print("    <h1 class=\"products-card__product-name\">$items->product_name</h1>");
+                print("    <h2 class=\"products-card__product-price\">$items->product_price</h2>");
+                print("    <button class=\"products-card__button\">Add to card</button>");
+                print("</div>");
+            }
+        }
+        ?>
+    </div>
     <footer class="footer">
         <h3 class="footer__texts">@Ruiz M. Phang</h3>
     </footer>
