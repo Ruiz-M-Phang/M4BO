@@ -23,20 +23,16 @@ include_once "assets/php/classes.php";
             echo "var javascript_array = ". $js_array . ";\n";
         ?>
     </script>
-    <title>TinyUSBsitcks.co</title>
+    <title>Buy here the cheapest USB sticks</title>
 </head>
 <body onload="setTimeout(myFunction, 1000);">
-    <!-- <header class="message__under-construction"> -->
-        <!-- The header class and contents in the header are tempary -->
-         <!-- <h3 class="under-construction__texts">This page is under construction</h3> -->
-    <!-- </header> -->
     <nav class="topNav">
         <ul class="topNav__list">
             <li class="list__item">
                 <a class="navItem__link--Home" href="index.php?page=home">
                     <img class="navItem__logo" src="" alt="Logo">
                 </a>
-                <a class="navItem__link--shopping_card" href="">
+                <a class="navItem__link--shopping_card" href="winkelwagen.php?page=shappingcard">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <div class="shoppingcard__div--counter" id="data-counter">0</div>
                 </a>
@@ -67,6 +63,18 @@ include_once "assets/php/classes.php";
         <img class="img__CTA" src="assets/img/usb_in_aanbieding.jpg" alt="2_usb-sticks_on_sale">
     </section>
     <div class="div__intersection"></div>
+    <section class="info">
+        <ul class="info__colomn">
+            <li class="info__tekst">
+                <h2>tekst_links</h1>
+            </li>
+        </ul>
+        <ul class="info__colomn">
+            <li class="info__tekst">
+                <h2>tekst_rechts</h1>
+            </li>
+        </ul>
+    </section>
     <footer class="footer">
         <h3 class="footer__texts">@Ruiz M. Phang</h3>
     </footer>

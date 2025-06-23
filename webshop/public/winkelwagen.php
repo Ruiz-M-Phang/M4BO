@@ -1,9 +1,9 @@
 <?php
 
 // "http://localhost:88/index.php?Home"
-$home = "Home";
+$home = "shoppingcard";
 
-$_GET['Home'] = $home;
+$_GET['page'] = $home;
 
 include_once "assets/php/classes.php";
 
@@ -23,7 +23,7 @@ include_once "assets/php/classes.php";
             echo "var javascript_array = ". $js_array . ";\n";
         ?>
     </script>
-    <title>TinyUSBsitcks.co</title>
+    <title>Buy here the cheapest USB sticks</title>
 </head>
 <body onload="setTimeout(myFunction, 1000);">
     <!-- <header class="message__under-construction"> -->
@@ -36,7 +36,7 @@ include_once "assets/php/classes.php";
                 <a class="navItem__link--Home" href="index.php?page=home">
                     <img class="navItem__logo" src="" alt="Logo">
                 </a>
-                <a class="navItem__link--shopping_card" href="">
+                <a class="navItem__link--shopping_card" href="winkelwagen.php?page=shappingcard">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <div class="shoppingcard__div--counter" id="data-counter">0</div>
                 </a>
@@ -54,19 +54,12 @@ include_once "assets/php/classes.php";
             </li>
         </ul>
     </nav>
-    <section class="CTA">
-        <div class="CTA__div">
-            <h1 class="CTA__product-name">2 usb-sticks 128mb</h1>
-            <div class="product-prices__div">
-                <h2 class="CTA__product-old-price">€2.00</h2>
-                <h2 class="CTA__product-new-price">€0.70</h2>
-            </div>
-            <button class="CTA__button">Add to card</button>
-            <h2 class="CTA__scarsity-effeft">Only 3 in stock</h2>
+    <section class="winkelwagen">
+        <div class="winkelwagen__tekst">
+            <!-- hier komen jouw producten die wilt kopen -->
+            <h1>This is what you've selected</h1>
         </div>
-        <img class="img__CTA" src="assets/img/usb_in_aanbieding.jpg" alt="2_usb-sticks_on_sale">
     </section>
-    <div class="div__intersection"></div>
     <footer class="footer">
         <h3 class="footer__texts">@Ruiz M. Phang</h3>
     </footer>

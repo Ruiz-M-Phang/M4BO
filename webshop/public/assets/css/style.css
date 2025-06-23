@@ -39,21 +39,6 @@ body {
     margin-top: 28vh;
 }
 
-/* .message__under-construction {
-    position: fixed;
-    margin-top: -23vh;
-    height: 5vh;
-    background-color: black;
-    color: white;
-    text-align: center;
-    width: 100vw;
-    margin-left: -1vw;
-} */
-
-/* .under-construction__texts {
-    margin-top: -0.01rem;
-} */
-
 .topNav {
     background-color: var(--tweede_huisstyle_kleur);
     position: fixed;
@@ -88,15 +73,15 @@ body {
 
 .shoppingcard__div--counter{
     position: absolute;
-    right: 1.1rem;
-    top: -0.5rem;
+    right: 1.2rem;
+    top: -1rem;
     block-size: auto;
     background-color: red;
     color: white;
     padding: 0.5rem;
     border-radius: 15rem 15rem 15rem 15rem;
     text-align: center;
-    width: 1rem;
+    width: 0.5rem;
     height: 1rem;
 
 }
@@ -281,6 +266,34 @@ body {
     text-transform: uppercase;
     border-radius: 5rem;
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* css van pagina index */
+
+.info {
+    border: 0.1rem solid;
+    border-color: black;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin: auto 5rem auto 5rem;
+
+    .info__tekst {
+        list-style: none;
+        
+    }
+}
+
+/* css van pagina winkelwagen */
+
+.winkelwagen {
+    border: 0.1rem solid;
+    border-color: black;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin: auto 5rem auto 5rem;
+    height: 30.5rem;
 }
 
 /* .img__product2 {

@@ -23,7 +23,7 @@ include_once "assets/php/classes.php";
             echo "var javascript_array = ". $js_array . ";\n";
         ?>
     </script>
-    <title>TinyUSBsitcks.co</title>
+    <title>Buy here the cheapest USB sticks</title>
 </head>
 <body onload="setTimeout(myFunction, 1000);">
     <!-- <header class="message__under-construction"> -->
@@ -36,7 +36,7 @@ include_once "assets/php/classes.php";
                 <a class="navItem__link--Home" href="index.php?page=home">
                     <img class="navItem__logo" src="" alt="Logo">
                 </a>
-                <a class="navItem__link--shopping_card" href="">
+                <a class="navItem__link--shopping_card" href="winkelwagen.php?page=shappingcard">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <div class="shoppingcard__div--counter" id="data-counter">0</div>
                 </a>
