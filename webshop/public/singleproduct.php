@@ -34,9 +34,9 @@ include_once "assets/php/classes.php";
         <ul class="topNav__list">
             <li class="list__item">
                 <a class="navItem__link--Home" href="index.php?page=home">
-                    <img class="navItem__logo" src="" alt="Logo">
+                    <img class="navItem__link--Home" src="assets/img/TinyUSBsticks_logo_white.webp" alt="logo">
                 </a>
-                <a class="navItem__link--shopping_card" href="winkelwagen.php?page=shappingcard">
+                <a class="navItem__link--shopping_card" href="winkelwagen.php?page=shoppingcard">
                     <i class="fa-solid fa-cart-shopping"></i>
                     <div class="shoppingcard__div--counter" id="data-counter">0</div>
                 </a>

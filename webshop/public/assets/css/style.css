@@ -5,6 +5,7 @@
     --dark-gray: rgb(58, 52, 52);
     /* --button_disabled: rgb(88, 88, 88); */
     --BG: rgb(150, 201, 220);
+    --darkmode: rgb(71, 94, 102);
     --CTA_button: rgb(118, 238, 89);
     --CTA_border-button: rgb(92, 182, 70);
     --tweede_huisstyle_kleur: rgb(7, 0, 77);
@@ -39,6 +40,10 @@ body {
     margin-top: 28vh;
 }
 
+.dark-mode {
+    background-color: var(--darkmode);
+}
+
 .topNav {
     background-color: var(--tweede_huisstyle_kleur);
     position: fixed;
@@ -47,12 +52,6 @@ body {
     width: 100vw;
     margin-left: -1vw;
     color: white;
-}
-
-
-.navItem__link--Home{
-    color: white;
-    
 }
 
 .navItem__link--shopping_card {
@@ -81,14 +80,14 @@ body {
     padding: 0.5rem;
     border-radius: 15rem 15rem 15rem 15rem;
     text-align: center;
-    width: 0.5rem;
+    width: 0.8rem;
     height: 1rem;
 
 }
 
 .svg-inline--fa {
     margin: auto 2rem auto 1rem;
-    height: 2rem;
+    height: 3rem;
 }
 
 .list__suedo_list {
@@ -104,25 +103,31 @@ body {
     border-color: black;
 
     .suedo_list__second-item {
-
+        
     }
 }
 
 .navItem__button--products {
     background-color: white;
     justify-self: flex-start;
-    width: 30vw;
+    width: 31vw;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .navItem__button--contact {
     background-color: white;
-    width: 30vw;
+    width: 31vw;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .navItem__button--darkmode {
     background-color: white;
     justify-self: flex-end;
-    width: 30vw;
+    width: 31vw;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .CTA {
@@ -271,15 +276,25 @@ body {
 /* css van pagina index */
 
 .info {
+
+    justify-content: space-around;
+    display: grid;
+    column-gap: 5rem;
+    grid-template-columns: 30rem 30rem;
+    margin: auto 5rem auto 5rem;
+}
+
+.info__colomn {
+    list-style: none;
+    background-color: white;
     border: 0.1rem solid;
     border-color: black;
-    display: flex;
+
     justify-content: space-around;
-    background-color: white;
-    margin: auto 5rem auto 5rem;
 
     .info__tekst {
-        list-style: none;
+        margin: 0.5rem 5rem 0.5rem 5rem;
+        justify-items: center;
         
     }
 }
